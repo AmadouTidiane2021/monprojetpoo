@@ -48,7 +48,10 @@ $routes = [
     '/user/connexion'           => ['AppController', 'connexion'],
     '/user/connexion'           => ['AppController', 'connexion'],
     '/produits/commande'        => ['ProduitsController','commande'],
-    '/produits/recap'           => ['ProduitsController','recap']
+    '/produits/recap'           => ['ProduitsController','recap'],
+    '/email/send'               => ['MailController', 'send'],
+    '/avis/commentaires'        =>['AvisController , commentaires'],
+    '/avis/add'                 => ['AvisController', 'add']
 
     
 

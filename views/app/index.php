@@ -1,6 +1,8 @@
 <?php include(VIEWS . '_partials/header.php'); ?>
 
-<!-- <?php var_dump($_SESSION['panier']);?> -->
+<a class="btn btn-warning" href="<?= BASE_PATH . 'email/send'  ?>">Envoyer</a>
+
+<!-- <?php var_dump($_SESSION['panier']); ?> -->
 
 <div class="row">
     <?php foreach ($produits as $produit) : ?>
@@ -26,7 +28,7 @@
                                     </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <button class="btn btn-secondary btn-sm " type="submit">Ajouter au panier</button>
+                                    <button class="btn btn-warning btn-sm " type="submit">Ajouter au panier</button>
                                 </div>
                             </div>
                         </div>
