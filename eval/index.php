@@ -13,17 +13,7 @@
                     <img src="<?= PHOTO . $produit['photo'] ?>" width="150" height="150" alt="">
                     <h4 class="card-title text-center"><?= $produit['prix'] ?> €</h4>
                     <p class="card-text text-center"><?= $produit['descriptif'] ?></p>
-                    <?php $commentaires = Avis::findByProduit(['produit_id' => $produit['id']]);
-                    // var_dump(count($commentaires)); 
-                    if (count($commentaires) == 0 || count($commentaires) == 1) :
-                        echo count($commentaires) . ' commentaire';
-                    else :
-                        echo count($commentaires) . ' commentaires';
-                    endif;
-                    if (count($commentaires) !== 0) : ?>
-                        <p><a href="<?= BASE_PATH . 'avis/commentaires?id=' . $produit['id'] ?>">Voir les commentaires</a></p>
-                    <?php endif; ?>
-                    <p><a href="<?= BASE_PATH . 'avis/add?id=' . $produit['id'] ?>">Ajouter commentaire</a></p>
+                    <p><a href="<?= BASE_PATH . 'avis/add?id=' . $commentaire['id']?>">Ajouter commentaire</a></p>
 
 
 

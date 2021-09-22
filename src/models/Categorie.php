@@ -33,7 +33,7 @@ class Categorie extends Db
     public static function create(array $data)
     {
         //die(var_dump($data));
-        $request = "REPLACE INTO categorie VALUES (:id,:nom  )";
+        $request = "REPLACE INTO categorie VALUES (:id,:nom)";
         $response = self::getDb()->prepare($request);
         $response->execute($data);
         return self::getDb()->lastInsertId();

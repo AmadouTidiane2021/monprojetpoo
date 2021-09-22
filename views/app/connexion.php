@@ -2,7 +2,7 @@
 
 <!-- <?php var_dump($commande) ; ?> -->
 
-<form method="post"       action="<?= BASE_PATH . 'user/connexion' ?>"      >
+<form method="post"       action="<?= BASE_PATH . 'user/connexion' ?>">
     <fieldset>
 
         <div class="form-group">

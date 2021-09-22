@@ -50,7 +50,7 @@ $routes = [
     '/produits/commande'        => ['ProduitsController','commande'],
     '/produits/recap'           => ['ProduitsController','recap'],
     '/email/send'               => ['MailController', 'send'],
-    '/avis/commentaires'        =>['AvisController , commentaires'],
+    '/avis/commentaires'        =>['AvisController' , 'commentaires'],
     '/avis/add'                 => ['AvisController', 'add']
 
     

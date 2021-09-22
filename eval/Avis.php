@@ -19,7 +19,7 @@ class Avis extends Db
         $response = self::getDb()->prepare($request);
         $response->execute($id);
 
-        return $response->fetchAll(PDO::FETCH_ASSOC);
+        return $response->fetch(PDO::FETCH_ASSOC);
     }
 
 
