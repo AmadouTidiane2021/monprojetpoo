@@ -25,7 +25,7 @@
 
 
 
-        <button type="submit" class="btn btn-light mt-2 mb-5">Ajouter un commentaire</button>
+        <button type="submit" class="btn btn-light mt-2 mb-5">Valider</button>
     </fieldset>
 </form>
 
